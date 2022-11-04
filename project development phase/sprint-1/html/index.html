@@ -1,113 +1,105 @@
-<!-- NAVIGATION MENUS -->
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
- <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <style>
-     * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+  <style>
+background-image: url('swimm.jpg');
+  
+<p style="background-image: url('swimm.jpg');">
+    * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
 }
-body {
- font-family: Cooper Black;
+ 
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid;
+  background: #f1f1f1;
+  
 }
+ background-image: url('swimm.jpg');
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: baby blue;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
 a {
- text-decoration: none;
+  color: aqua
+;
 }
-li {
- list-style: none;
-}
-.navbar {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 20px;
- background-color:turquoise;
- color: #fff;
-}
-.nav-links a {
- color: #fff;
-}
-/* LOGO */
-.logo {
- font-size: 32px;
-}
-/* NAVBAR MENU */
-.menu {
- display: flex;
- gap: 1em;
- font-size: 19px;
-}
-.menu li:hover {
- background-color: #4c9e9e;
- border-radius: 5px;
- transition: 0.5s ease;
-}
-.menu li {
- padding: 5px 14px;
-}
-.services {
- position: relative;
-}
-.dropdown {
- background-color: rgb(0, 255, 255);
- padding: 1em 0;
- position: absolute; /*WITH RESPECT TO PARENT*/
- display: none;
- border-radius: 8px;
- top: 35px;
-}
-.dropdown li + li {
- margin-top: 10px;
-}
-.dropdown li {
- padding: 0.5em 1em;
- width: 8em;
- text-align: center;
-}
-.dropdown li:hover {
- background-color: #4c4c9e;
-}
-.services:hover .dropdown {
- display: block;
-}
-#example1 {
-  background: url(swim.jpeg);
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #89cfef;
+  text-align: center;
 
 }
-#swiming
+#ex {
+
+  background: url(swimm.jpg);
+
+}
+#swimm
 {
    height: 200px;
   width: 50%;
 }
-   </style>
-   <title>Document</title>
- </head>
- <body>
-   <nav class="navbar">
-     <!-- LOGO -->
 
-     <div class="logo">VIRTUAL EYE</div>
-     <!-- NAVIGATION MENU -->
-     <ul class="nav-links">
-       <!-- USING CHECKBOX HACK -->
+  </style>
+</head>
+<body>
+<form>
+  <div class="container">
+    <h1>LOGIN</h1>
+    <p>Login with your credentials.</p>
+    <hr>
 
-       <div class="menu">
-         <li><a href=" index.html">Home</a></li>
-         <li><a href="/">About</a></li>
-         
-         <li><a href="register.html">Register</a></li>
-         <li><a href="login.html">Login</a></li>
-       </div>
-     </ul>
-   </nav>
-   <div class="swim">
-     <img style="height:670px; width:1520px"src="swim.jpeg">
-     <a href="/result"><button style = "position:absolute; right:60px; bottom:45px; height:40px; width:500px; color:cyan; background:black;"> TO TRY THE DEMO VERSION (CLICK HERE)</button></a>
-   </div>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
- </body>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+
+    <p><a href="/index" class="registerbtn">LOGIN</a>.</p>
+
+     <img style="height:670px; width:1520px"src="swimm.jpg">
+     
+    
+  </div>
+
+
+
+</form>
+</body>
 </html>
