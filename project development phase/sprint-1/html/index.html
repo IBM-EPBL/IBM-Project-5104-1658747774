@@ -25,7 +25,7 @@ li {
  align-items: center;
  justify-content: space-between;
  padding: 20px;
- background-color: red;
+ background-color:turquoise;
  color: #fff;
 }
 .nav-links a {
@@ -53,7 +53,7 @@ li {
  position: relative;
 }
 .dropdown {
- background-color: rgb(1, 139, 139);
+ background-color: rgb(0, 255, 255);
  padding: 1em 0;
  position: absolute; /*WITH RESPECT TO PARENT*/
  display: none;
@@ -69,13 +69,13 @@ li {
  text-align: center;
 }
 .dropdown li:hover {
- background-color: #4c9e9e;
+ background-color: #4c4c9e;
 }
 .services:hover .dropdown {
  display: block;
 }
 #example1 {
-  background: url(swiming.jpg);
+  background: url(swim.jpeg);
 
 }
 #swiming
@@ -89,25 +89,23 @@ li {
  <body>
    <nav class="navbar">
      <!-- LOGO -->
+
      <div class="logo">VIRTUAL EYE</div>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
 
        <div class="menu">
-         <li><a href="/">Home</a></li>
+         <li><a href=" index.html">Home</a></li>
          <li><a href="/">About</a></li>
-         <li class="services">
-           <a href="/">Services</a>
-
-         </li>
-         <li><a href="/register">Register</a></li>
-         <li><a href="/login">Login</a></li>
+         
+         <li><a href="register.html">Register</a></li>
+         <li><a href="login.html">Login</a></li>
        </div>
      </ul>
    </nav>
-   <div class="swiming">
-     <img style="height:670px; width:1520px"src="/images/swiming.jpg">
+   <div class="swim">
+     <img style="height:670px; width:1520px"src="swim.jpeg">
      <a href="/result"><button style = "position:absolute; right:60px; bottom:45px; height:40px; width:500px; color:cyan; background:black;"> TO TRY THE DEMO VERSION (CLICK HERE)</button></a>
    </div>
 
